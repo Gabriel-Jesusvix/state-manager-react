@@ -27,3 +27,6 @@ The course/project covers various stages of building a state manager, focusing o
 
 6. **Refactoring actions and components**
    Refactoring the codebase to improve the interaction between actions and React components for better maintainability.
+
+## Screen
+![Screenshot 2024-10-27 at 23 49 46](https://github.com/user-attachments/assets/b335ca6d-068e-43cb-a584-66240088740c)
