@@ -1,27 +1,29 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+</br>
 
-Currently, two official plugins are available:
+# Custom State Manager with React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project implements a custom state manager for React applications, built from scratch without relying on external libraries. The goal is to understand key concepts behind state management and how to apply them in real-world projects.
 
-## Expanding the ESLint configuration
+The course/project covers various stages of building a state manager, focusing on solving common issues with existing tools like Context API and exploring advanced techniques such as the Observable pattern and useSyncExternalStore.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Key Topics Covered
 
-- Configure the top-level `parserOptions` property like this:
+1. **Problems with using Context API for global states**
+   Understanding the limitations of Context API when handling global states in large applications.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+2. **Creating the store**
+   Initial implementation of a custom store to centralize and manage the global state of the application.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Understanding and applying the Observable Pattern**
+   Using the Observable design pattern to enhance reactivity and state change notifications.
+
+4. **Implementing actions**
+   Creating and implementing actions to modify the global state predictably and scalable.
+
+5. **Using useSyncExternalStore and optimizing unnecessary renders**
+   Leveraging React's `useSyncExternalStore` hook to reduce unnecessary re-renders and improve application performance.
+
+6. **Refactoring actions and components**
+   Refactoring the codebase to improve the interaction between actions and React components for better maintainability.
